@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  padding-top: 50px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 30%;
+  margin: 20px 10px;
+}
+
+.btn {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+
+p {
+  height: 150px;
+}
