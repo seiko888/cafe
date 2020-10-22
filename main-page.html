@@ -302,27 +302,44 @@
     </div>
     <script>      
       function clickBtnChatan(){
+        const okinawa = document.getElementsByClassName("okinawa");
         const chatan = document.getElementsByClassName("chatan");
-        if(chatan[0].style.display=="inherit"){
-          for(var i = 0; i < chatan.length; i++){
-            chatan[i].style.display= "none";
+        if(okinawa[0].style.display=="none" && chatan[0].style.display=="none"){
+          for(var i = 0; i < okinawa.length; i++){
+            okinawa[i].style.display= "inherit";
           }
-        }else{
           for(var i = 0; i < chatan.length; i++){
             chatan[i].style.display= "inherit";
+          }
+        }else if(okinawa[0].style.display=="none"){
+          for(var i = 0; i < okinawa.length; i++){
+            okinawa[i].style.display= "inherit";
+          }
+        }else{
+
+          for(var i = 0; i < okinawa.length; i++){
+            okinawa[i].style.display= "none";
           }
         }
       }
     
       function clickBtnOkinawa(){
         const okinawa = document.getElementsByClassName("okinawa");
-        if(okinawa[0].style.display=="inherit"){
-          for(var i = 0; i < okinawa.length; i++){
-            okinawa[i].style.display= "none";
-          }
-        }else{
+        const chatan = document.getElementsByClassName("chatan");
+        if(okinawa[0].style.display=="none" && chatan[0].style.display=="none"){
           for(var i = 0; i < okinawa.length; i++){
             okinawa[i].style.display= "inherit";
+          }
+          for(var i = 0; i < chatan.length; i++){
+            chatan[i].style.display= "inherit";
+          }
+        }else if(chatan[0].style.display=="none"){
+            for(var i = 0; i < chatan.length; i++){
+              chatan[i].style.display= "inherit";
+            }
+        }else{
+          for(var i = 0; i < chatan.length; i++){
+            chatan[i].style.display= "none";
           }
         }
       }

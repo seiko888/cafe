@@ -29,3 +29,10 @@ header {
 p {
   height: 150px;
 }
+
+.chatan{
+  display: inherit;
+}
+.okinawa{
+  display: inherit;
+}
