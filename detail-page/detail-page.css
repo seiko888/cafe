@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  padding-top: 50px;
+  justify-content: center;
+}
+
+.tag{
+  display: flex;
+}
+.card-body{
+  width:450px;
+}
+.snsmark{
+  display: flex;
+  justify-content: center;
+}
+
+.item{
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.home{
+  margin-top: 5px;
+}
+
+.map{
+  margin-left: 5px; 
+}
