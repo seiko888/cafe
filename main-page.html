@@ -25,6 +25,7 @@
         data-toggle="button"
         aria-pressed="false"
         autocomplete="off"
+        onclick="clickBtnChatan()"
       >
         北谷町
       </button>
@@ -34,12 +35,13 @@
         data-toggle="button"
         aria-pressed="false"
         autocomplete="off"
+        onclick="clickBtnOkinawa()"
       >
         沖縄市
       </button>
     </header>
     <div class="container">
-      <div class="card" style="width: 18rem">
+      <div class="card chatan" style="width: 18rem">
         <img
           class="bd-placeholder-img card-img-top"
           width="100%"
@@ -298,5 +300,34 @@
         </div>
       </div>
     </div>
+    <script>      
+      function clickBtnChatan(){
+        const chatan = document.getElementsByClassName("chatan");
+        if(chatan[0].style.display=="inherit"){
+          for(var i = 0; i < chatan.length; i++){
+            chatan[i].style.display= "none";
+          }
+        }else{
+          for(var i = 0; i < chatan.length; i++){
+            chatan[i].style.display= "inherit";
+          }
+        }
+      }
+    
+      function clickBtnOkinawa(){
+        const okinawa = document.getElementsByClassName("okinawa");
+        if(okinawa[0].style.display=="inherit"){
+          for(var i = 0; i < okinawa.length; i++){
+            okinawa[i].style.display= "none";
+          }
+        }else{
+          for(var i = 0; i < okinawa.length; i++){
+            okinawa[i].style.display= "inherit";
+          }
+        }
+      }
+      </script>
   </body>
 </html>
+
+
